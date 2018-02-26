@@ -1,6 +1,9 @@
 
 package entities;
 
+import configs.HibernateUtil;
+import org.apache.log4j.Logger;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,6 +14,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="message")
 public class Message {
+    private static Logger LOGGER = Logger.getLogger(Message.class.getName());
 
 
     //for Hibernate 4.3.x Users
@@ -34,6 +38,7 @@ public class Message {
 
     public Message() {}
     public Message(String text) {
+        LOGGER.info("MESSAGE CLASS"+text);
         this.text = text;
     }
 

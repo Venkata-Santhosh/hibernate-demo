@@ -20,6 +20,11 @@
             <scope>runtime</scope>
             <version>6.0.5</version>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
 
 </project>
